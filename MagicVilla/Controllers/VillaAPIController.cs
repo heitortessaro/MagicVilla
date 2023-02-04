@@ -43,6 +43,9 @@ namespace MagicVilla_VillaAPI.Controllers
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public ActionResult<VillaDTO> CreateVilla([FromBody] VillaDTO villaDto)
     {
+      // if(!ModelState.IsValid){
+      //   return BadRequest(ModelState);
+      // }
       if (villaDto == null)
       {
         return BadRequest(villaDto);
