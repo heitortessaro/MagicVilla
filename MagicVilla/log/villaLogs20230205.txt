@@ -1,0 +1,25 @@
+2023-02-05 11:43:14.680 -03:00 [INF] Now listening on: https://localhost:7120
+2023-02-05 11:43:14.697 -03:00 [INF] Now listening on: http://localhost:5179
+2023-02-05 11:43:14.699 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 11:43:14.699 -03:00 [INF] Hosting environment: Development
+2023-02-05 11:43:14.699 -03:00 [INF] Content root path: /home/heitor/Trybe/aceleracao/Udemi/MagicVilla/MagicVilla/
+2023-02-05 11:43:26.564 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - -
+2023-02-05 11:43:26.637 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - - - 200 - text/html;charset=utf-8 75.0864ms
+2023-02-05 11:43:26.737 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - -
+2023-02-05 11:43:26.814 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.2735ms
+2023-02-05 11:43:30.395 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7120/VillaAPI - -
+2023-02-05 11:43:30.399 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla)'
+2023-02-05 11:43:30.404 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla).
+2023-02-05 11:43:30.405 -03:00 [INF] Getting all vilas
+2023-02-05 11:43:30.409 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Dto.VillaDTO, MagicVilla, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-02-05 11:43:30.476 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla) in 68.9473ms
+2023-02-05 11:43:30.477 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla)'
+2023-02-05 11:43:30.477 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7120/VillaAPI - - - 200 107 application/json;+charset=utf-8 81.6580ms
+2023-02-05 11:43:47.110 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7120/VillaAPI/0 - -
+2023-02-05 11:43:47.111 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla)'
+2023-02-05 11:43:47.118 -03:00 [INF] Route matched with {action = "GetVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] GetVilla(Int32) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla).
+2023-02-05 11:43:47.123 -03:00 [ERR] Get Villa Error with Id 0
+2023-02-05 11:43:47.123 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-02-05 11:43:47.131 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla) in 13.1899ms
+2023-02-05 11:43:47.131 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla)'
+2023-02-05 11:43:47.131 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7120/VillaAPI/0 - - - 400 163 application/problem+json;+charset=utf-8 20.9401ms
